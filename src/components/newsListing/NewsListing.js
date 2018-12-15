@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { actions, selectors } from "src/shared/store";
-import style from "./NewsListing.css";
+import styles from "./NewsListing.css";
 import Router from "next/router";
 import NewsItem from "../newsItem";
 
@@ -27,7 +27,7 @@ class NewsListing extends Component {
       <NewsItem data={news} handleClick={this._handleClick} key={index} />
     ));
 
-    return <div>{cells}</div>;
+    return <div className={styles.listing}>{cells}</div>;
   }
 }
 

@@ -1,6 +1,5 @@
-.NewsListing {
-  height: 100%;
-  margin-left: 10rem;
-  padding: 10rem;
-  height: calc(2rem - 2rem);
+.listing {
+  display: flex;
+  margin: 0 2rem;
+  flex-wrap: wrap;
 }

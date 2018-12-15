@@ -1,0 +1,7 @@
+.env
+.next
+.npm
+*.log
+coverage
+logs
+node_modules/

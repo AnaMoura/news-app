@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+const server = require("../server");
+
+const HOST = "localhost";
+const PORT = 3000;
+
+(async () => {
+  const app = await server();
+
+  app.listen(PORT, HOST, error => {
+    if (error) {
+      console.error(error.message);
+    }
+  });
+})();
